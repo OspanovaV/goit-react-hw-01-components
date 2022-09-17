@@ -4,6 +4,9 @@
     align-items: center;
 
     width: 250px;
+    margin: 0 auto 50px;
+    padding-top: 30px;
+    background-color: #fff;
 
     border: 1px solid #e9eef3;
     border-radius: 5px;
@@ -14,7 +17,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 
+    font-size: 18px;
     color: #000000;
 }
 
@@ -35,12 +40,12 @@
 
 .tag {
     margin-bottom: 10px;
-    color: #dbe1e7;
+    color: rgb(143, 143, 143);
 }
 
 .location {
     margin-bottom: 30px;
-    color: #dbe1e7;
+    color: rgb(143, 143, 143);
 }
 
 .stats {
@@ -57,6 +62,7 @@
 .item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     padding: 15px;
@@ -69,10 +75,12 @@
 }
 
 .label {
-    font-size: 12px;
     margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(143, 143, 143);
 }
 
 .quantity {
-    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
 }
