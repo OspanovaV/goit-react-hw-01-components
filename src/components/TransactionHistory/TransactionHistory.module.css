@@ -9,18 +9,20 @@
 }
 
 th {
-    border: 1px solid grey;
+    border: 1px solid rgb(218, 215, 215);
     background-color: #00bcd4;
     color: white;
+    text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
     padding: 5px 0 5px 0;
 }
 
 td {
-    border: 1px solid grey;
+    border: 1px solid rgb(220, 217, 217);
     font-weight: 300;
     font-size: 15px;
+    text-transform: capitalize;
     padding: 5px 0 5px 0;
 }
 

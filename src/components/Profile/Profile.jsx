@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { FaHeart, FaUserPlus, FaRegEye } from 'react-icons/fa';
 import css from './Profile.module.css';
 
 export const Profile = ({ username, tag, location, avatar, stats: {followers, views, likes}}) => {
@@ -19,15 +20,15 @@ export const Profile = ({ username, tag, location, avatar, stats: {followers, vi
 
       <ul className={css.stats}>
         <li className={css.item}>
-          <span className={css.label}>Followers</span>
+          <span className={css.label}><FaUserPlus />Followers</span>
           <span className={css.quantity}>{followers}</span>
         </li>
         <li className={css.item}>
-          <span className={css.label}>Views</span>
+          <span className={css.label}><FaRegEye />Views</span>
           <span className={css.quantity}>{views}</span>
         </li>
         <li className={css.item}>
-          <span className={css.label}>Likes</span>
+          <span className={css.label}><FaHeart />Likes</span>
           <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
