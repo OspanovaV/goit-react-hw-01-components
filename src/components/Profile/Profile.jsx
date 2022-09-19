@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { FaHeart, FaUserPlus, FaRegEye } from 'react-icons/fa';
+import { iconSize } from 'constants/iconSize';
 import css from './Profile.module.css';
 
 export const Profile = ({ username, tag, location, avatar, stats: {followers, views, likes}}) => {
@@ -20,15 +21,15 @@ export const Profile = ({ username, tag, location, avatar, stats: {followers, vi
 
       <ul className={css.stats}>
         <li className={css.item}>
-          <span className={css.label}><FaUserPlus />Followers</span>
+          <span className={css.label}><FaUserPlus size={iconSize.sm} />Followers</span>
           <span className={css.quantity}>{followers}</span>
         </li>
         <li className={css.item}>
-          <span className={css.label}><FaRegEye />Views</span>
+          <span className={css.label}><FaRegEye size={iconSize.sm}/>Views</span>
           <span className={css.quantity}>{views}</span>
         </li>
         <li className={css.item}>
-          <span className={css.label}><FaHeart />Likes</span>
+          <span className={css.label}><FaHeart size={iconSize.sm}/>Likes</span>
           <span className={css.quantity}>{likes}</span>
         </li>
       </ul>
